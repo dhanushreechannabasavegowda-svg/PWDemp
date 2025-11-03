@@ -1,0 +1,29 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+
+# node
+node_modules/
+*.log
+.env
+.DS_Store
+
+# python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# playwright / test artifacts
+test-results/
+playwright-report/
+
+# IDEs
+.vscode/
+.idea/
