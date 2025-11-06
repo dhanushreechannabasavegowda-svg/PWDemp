@@ -66,7 +66,7 @@ test('Automation Practice Demo with Waits', async ({ page }) => {
   await page.getByLabel('Sorted List:').selectOption('elephant');
   await pause();
 
-  // ✅ DATE PICKER #1 (jQuery datepicker)
+  // DATE PICKER #1 (jQuery datepicker)
   await page.locator('#datepicker').click();
   await pause();
 
@@ -76,7 +76,7 @@ test('Automation Practice Demo with Waits', async ({ page }) => {
     .click();
   await pause();
 
-  // ✅ DATE PICKER #2 (inline calendar)
+  //  DATE PICKER #2 (inline calendar)
   await page.locator('#txtDate').click();
   await pause();
 
@@ -84,7 +84,7 @@ test('Automation Practice Demo with Waits', async ({ page }) => {
   await page.getByRole('link', { name: '5', exact: true }).click();
   await pause();
 
-  // ✅ DATE RANGE PICKER
+  //  DATE RANGE PICKER
   await page.getByPlaceholder('Start Date').click();
   await pause();
   await page.getByPlaceholder('Start Date').fill('2025-10-29');
@@ -95,13 +95,13 @@ test('Automation Practice Demo with Waits', async ({ page }) => {
   await page.getByPlaceholder('End Date').fill('2025-11-05');
   await pause();
 
-  // ✅ SUBMIT BUTTON
+  //  SUBMIT BUTTON
   await page
     .locator('#post-body-1307673142697428135')
     .getByRole('button', { name: 'Submit' })
     .click();
   await pause();
 
-  console.log("✅ Date selection script executed successfully!");
+  console.log(" Date selection script executed successfully!");
 
 });
